@@ -1,0 +1,703 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+background-color: #101010;
+}
+::-webkit-scrollbar-thumb {
+background-color: #ff0000;
+border-radius: 5px;
+}
+
+header {
+    height: 100px;
+    background: linear-gradient(#000, #000000);
+
+}
+
+/* body {
+    overflow-x: hidden;
+} */
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-hd {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* Espaçamento Flex */
+
+.navbar-logo {
+    flex: 30%;
+}
+nav {
+    flex: 70%;
+}
+
+.navbar-search {
+    flex: 5%;
+}
+.navbar-login {
+    flex: 0%;
+}
+
+
+/* Fim */
+
+.navbar-logo img{
+    width: 225px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.navbar-links ul {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar-login button,
+.botao-login-responsivo button {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #ff0000;
+    padding: 10px 40px;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0px 0px 10px #ff000077;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* Menu Hamburguer */
+
+.navbar-responsivo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #151515;
+    z-index: 999;
+}
+
+.navbar-links-hamburguer {
+    display: block;
+    text-align: center;
+    
+}
+
+.navbar-links-hamburguer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-links-hamburguer ul li{
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.navbar-links-hamburguer ul li a{
+    color: #fff;
+}
+
+.navbar-icon-hamburguer {
+    display: none;
+}
+
+.navbar-icon-hamburguer button {
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+}
+
+.navbar-icon-hamburguer button i {
+    font-size: 20px;
+}
+
+.responsivo-botoes-d {
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #000000;
+    position: relative;
+    z-index: 999;
+}
+
+.responsivo-botoes-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.botao-search-responsivo {
+    display: flex;
+}
+
+.btn-icon-search {
+    border-radius: 0px 15px 15px 0px;
+    padding: 5px 8px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.botao-search-responsivo input {
+    border-radius: 15px 0px 0px 15px;
+    border: none;
+    padding: 2px 15px;
+    color: #6a6a6a;
+    outline: none;
+}
+
+.botao-login-responsivo button {
+    padding: 10px 25px;
+}
+
+
+
+/* Fim */
+
+
+/* BootStrap Sliders */
+
+.sec-carousel {
+    background-color: #000;
+}
+
+.carousel-item {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #00000071 10%, #000000 90%);
+    opacity: 1;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    width: 8%;
+    opacity: 0.3;
+}
+
+/* Sliders Conteudo */
+
+.anime-item-about {
+    width: 500px;
+    position: relative;
+    bottom: 435px;
+}
+
+.anime-item-title h4 {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin: 0;
+}
+
+.anime-item-title h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.anime-avaliacao-btn-sobre button {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #ff0000;
+    box-shadow: 0px 0px 15px #ff000054;
+    border-radius:  5px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 8px;
+    margin-top: 15px;
+}
+
+.anime-item-sobre p {
+    color: #ccc;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.anime-item-btn button:first-child {
+    background: linear-gradient(to right,#ff0000, #530000);
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.anime-item-btn button:nth-child(2) {
+    background-color: transparent;
+    color: #ccc;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.anime-item-btn button i {
+    margin-right: 5px;
+}
+
+
+/* Fim */
+
+/* Cards */
+
+.sec-sessoes-animes,
+.ls-animes {
+    height: auto;
+    background-color: #000;
+    padding: 1rem 0rem;
+}
+
+.sessoes-title h2 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.traco-limite {
+    width: 300px;
+    height: 2px;
+    position: relative;
+}
+
+.traco {
+    width: 50px;
+    height: 4px;
+    background-color: #ff0000;
+    position: absolute;
+    border-radius: 4px;
+    animation: animacaoFlutuarLados 3s ease-in-out infinite;
+}
+
+.sec-sessoes-cards,
+.lista-cards-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sec-sessoes-card {
+    width: 200px;
+    height: auto;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.card-body-footer {
+    padding-top: 0.8rem;
+}
+
+.card-title span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.card-eps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.card-eps span {
+    color: #323232;
+    font-weight: 600;
+}
+
+/* Slide de Cards */
+
+.lista-cards-slide {
+    width: 100%;
+}
+
+.card-slide {
+    width: 200px;
+    height: auto;
+    margin-bottom: 3rem;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.card-slide > .card-header img {
+    width: 200px;
+    height: 300px;
+}
+
+.title-mg-b {
+    margin-bottom: 4rem;
+}
+
+.title-ls-anm h2 {
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+}
+
+.title-ls-anm > .traco-limite {
+    margin-top: 4px;
+    width: 238px;
+}
+
+
+
+/* Fim */
+
+
+/* :hovers */
+
+.navbar-links ul li a:hover {
+    color: #ff0000;
+}
+
+.navbar-links-hamburguer ul li:hover{
+    background-color: #ff0000;
+}
+
+.navbar-login button:hover,
+.botao-login-responsivo button:hover {
+    background-color: red;
+}
+
+.anime-item-btn button:hover {
+    transform: scale(105%);
+}
+
+.sec-sessoes-card:hover > .card-header img, .card-header > img:hover {
+    opacity: 0.6;
+    transform: translateY(-3%);
+}
+
+.navbar-icon-hamburguer button:hover {
+    transform: scale(115%);
+}
+
+/* Fim */
+
+/* Footer */
+
+footer {
+    background-color: #0d0d0d;
+}
+
+.footer-logo-redes-sociais {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ft-logo img {
+    width: 200px;
+    height: 50px;
+}
+
+.ft-copy-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-list {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 20px;
+}
+
+.flex-list i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.ft-logo img {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.ft-redes-sociais {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-copy,
+.footer-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.footer-text {
+    text-align: center;
+    color: #333339;
+}
+
+.footer-copy {
+    background-color: #ff0000;
+}
+
+.footer-copy span {
+    color: #ffffff;
+}
+
+.section-back {
+    background-color: #000000;
+}
+
+
+/* ESTILOS GERAIS */
+
+.dsp-n {
+    display: none;
+}
+.dsp-f {
+    display: flex;
+}
+.dsp-b {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.transition {
+    transition: 0.3s;
+}
+
+/* Animações */
+
+@keyframes animacaoFlutuarLados {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 50px);
+        box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.4);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Fim */
+
+/* Responsivo ( Smartphone )*/
+
+
+@media (max-width: 759px) {
+    .container {
+        width: 85%;
+    }
+
+    .navbar-links,
+    .navbar-search,
+    .navbar-login {
+        display: none;
+    }
+
+    .anime-item-about {
+        width: 90%;
+    }
+
+    .anime-item-title h2 {
+        font-size: 1.5em;
+    }
+
+    .anime-item-btn {
+        width: 90%;
+    }
+    .anime-item-btn button {
+        margin-bottom: 10px;
+    }
+
+    .sec-sessoes-cards {
+        justify-content: space-between;
+    }
+    
+
+    .card-slide > .card-header img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .card-slide {
+        width: 200px;
+        height: auto;
+        margin-bottom: 3rem;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .card-slide {
+        padding: 0;
+    }
+
+    .card-header {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .ls-animes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-body-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card-title {
+        width: 150px;
+        text-align: center;
+    }
+
+    .card-eps span {
+        padding: 0px 10px;
+        margin-bottom: 5px;
+    }
+
+    .footer-logo-redes-sociais {
+        flex-direction: column;
+    }
+
+    .flex-list {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .navbar-icon-hamburguer {
+        display: block;
+    }
+}
+    
+
+    @media (min-width: 200px ) {
+        .sec-sessoes-cards {
+            justify-content: center;
+        }
+
+        .sec-sessoes-card {
+            padding: 0px 10px;
+        }
+
+        .footer-copy {
+            padding: 20px;
+        }
+
+        .footer-copy span {
+            text-align: center;
+        }
+
+    }
+
+
+/* Responsivo ( Tablet ) */
+
+@media (min-width: 760px) and (max-width: 1034px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar-responsivo {
+        display: none;
+    }
+
+    .navbar-links ul li a {
+        font-size: 14px;
+    }
+
+    .navbar-login button {
+        padding: 10px 30px;
+        display: none;
+    }
+
+    .navbar-search {
+        display: none;
+    }
+
+    .responsivo-botoes-d {
+        display: block;
+    }
+}
+
+@media (min-width: 1035px) and (max-width: 1169px) {
+    .container {
+        width: 90%;
+    }
+}
